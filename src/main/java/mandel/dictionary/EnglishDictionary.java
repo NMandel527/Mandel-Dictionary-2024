@@ -36,8 +36,8 @@ public class EnglishDictionary {
     public List<String> getDefinition(String word) {
         List<String> allDefs = new ArrayList<>();
 
-        for (String[] record : wordAndDef){
-            if (record[0].equalsIgnoreCase(word)){
+        for (String[] record : wordAndDef) {
+            if (record[0].equalsIgnoreCase(word)) {
                 allDefs.addAll(Arrays.asList(record).subList(1, record.length));
             }
         }
