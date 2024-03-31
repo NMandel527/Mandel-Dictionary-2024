@@ -38,7 +38,7 @@ public class EnglishDictionary {
 
         for (String[] record : wordAndDef) {
             if (record[0].equalsIgnoreCase(word)) {
-                allDefs.addAll(Arrays.asList(record[2]));
+                allDefs.add(record[2]);
             }
         }
         return allDefs;
