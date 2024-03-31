@@ -19,8 +19,8 @@ public class EnglishDictionaryTest {
         List<String> definitions = dictionary.getDefinition("Abnormality");
 
         //then
-        List<String> expectedDef = Arrays.asList("n.",
-                "The state or quality of being abnormal; variation; irregularity.", "n.", "Something abnormal.");
+        List<String> expectedDef = Arrays.asList("The state or quality of being abnormal; variation; irregularity.",
+                "Something abnormal.");
 
         assertArrayEquals(expectedDef.toArray(), definitions.toArray());
     }
