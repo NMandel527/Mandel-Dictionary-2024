@@ -9,7 +9,7 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class EnglishDictionaryTest {
+public class EnglishDictionaryTest {
     @Test
     public void getDefinition() throws CsvValidationException, IOException {
         //given
@@ -19,10 +19,10 @@ class EnglishDictionaryTest {
         List<String> definitions = dictionary.getDefinition("Abnormality");
 
         //then
-        List<String> expectedDef = Arrays.asList("n., The state or quality of being abnormal; variation; irregularity.",
-                "n., Something abnormal.");
+        List<String> expectedDef = Arrays.asList("n.", "The state or quality of being abnormal; variation; irregularity.",
+                "n.", "Something abnormal.");
 
-        assertEquals(expectedDef.toString(), definitions.toString());
+        assertArrayEquals(expectedDef.toArray(), definitions.toArray());
     }
 
 }

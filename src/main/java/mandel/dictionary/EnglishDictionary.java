@@ -12,7 +12,7 @@ import java.util.*;
  * Reads the englishDictionary file ONCE.
  */
 public class EnglishDictionary {
-    List<String[]> wordAndDef = new ArrayList<>();
+    private final List<String[]> wordAndDef = new ArrayList<>();
 
     public EnglishDictionary() throws CsvValidationException, IOException {
         // gets the file from the "resources" directory
