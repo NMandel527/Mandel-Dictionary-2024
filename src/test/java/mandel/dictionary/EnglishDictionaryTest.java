@@ -22,7 +22,7 @@ public class EnglishDictionaryTest {
         List<String> expectedDef = Arrays.asList("The state or quality of being abnormal; variation; irregularity.",
                 "Something abnormal.");
 
-        assertArrayEquals(expectedDef.toArray(), definitions.toArray());
+        assertEquals(expectedDef, definitions);
     }
 
 }
