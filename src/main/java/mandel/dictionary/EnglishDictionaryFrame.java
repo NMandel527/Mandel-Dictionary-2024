@@ -68,7 +68,7 @@ public class EnglishDictionaryFrame extends JFrame {
         StringBuilder defText = new StringBuilder();
         for (String def : allDefs)
         {
-            defText.append(def + "\n");
+            defText.append(def).append("\n");
         }
         defs.setText(defText.toString());
     }
