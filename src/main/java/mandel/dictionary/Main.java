@@ -6,7 +6,7 @@ public class Main {
         try {
             edf = new EnglishDictionaryFrame();
             edf.setVisible(true);
-        } catch (Exception ex){
+        } catch (Exception ex) {
             ex.printStackTrace();
         }
     }
